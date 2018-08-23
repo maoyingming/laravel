@@ -8,7 +8,7 @@ class $class_name
     /**
      * @var \$model_namespace
      */
-    public $$model_var_name;
+    protected $$model_var_name;
 
     public function __construct($model_name $$model_var_name)
     {
