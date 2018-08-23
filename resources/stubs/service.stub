@@ -1,0 +1,17 @@
+<?php
+namespace $service_namespace;
+
+use $repository_namespace;
+
+class $class_name
+{
+    /**
+     * @var \$repository_namespace
+     */
+    public $$repository_var_name;
+
+    public function __construct($repository_name $$repository_var_name)
+    {
+        $this->$repository_var_name = $$repository_var_name;
+    }
+}
