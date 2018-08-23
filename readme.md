@@ -8,9 +8,7 @@
 
 1、resources/stubs新建模板文件
 
-2、php artisan make:console MakeRepositoryCommand
-
-   php artisan make:console MakeServiceCommand
+2、php artisan make:console MakeRepositoryCommand、php artisan make:console MakeServiceCommand
    
 3、然后改下签名、描述和自动生成逻辑 app/Console/Commands/MakeRepositoryCommand
 
