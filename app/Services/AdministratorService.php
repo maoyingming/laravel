@@ -14,4 +14,9 @@ class AdministratorService
     {
         $this->AdministratorRepository = $AdministratorRepository;
     }
+    public function loginCheck($request){
+        $param = $request->all();
+        //return $this->AdministratorRepository->findOne(['email' => $param['email'], 'password' => $param['password']]);
+        return $this->AdministratorRepository->find(1);
+    }
 }

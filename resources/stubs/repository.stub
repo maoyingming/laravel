@@ -100,5 +100,15 @@ class $class_name
         $$model_name = $this->$model_var_name->where($field, '=', $value)->get($columns);
         return $$model_name;
     }
+    /**
+         * @param $field
+         * @param array $columns
+         * @return \Illuminate\Database\Eloquent\Collection|static[]
+         */
+        public function findBy($field, $columns = array('*'))
+        {
+            $$model_name = $this->$model_var_name->where($field)->get($columns);
+            return $$model_name;
+        }
 
 }

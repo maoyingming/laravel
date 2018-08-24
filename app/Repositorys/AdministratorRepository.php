@@ -100,5 +100,15 @@ class AdministratorRepository
         $Administrator = $this->administrator->where($field, '=', $value)->get($columns);
         return $Administrator;
     }
-
+    /**
+     * @param $field
+     * @param array $columns
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
+    public function findOne($field,$columns = array('*'))
+    {
+        dd($field);
+        $Administrator = $this->administrator->where($field)->get($columns);
+        return $Administrator;
+    }
 }

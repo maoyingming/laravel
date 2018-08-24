@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Administrator extends Model
 {
-    //
+    protected $table = 'administrator';
+
     protected $fillable = [
         'name',
         'email',
@@ -19,6 +20,7 @@ class Administrator extends Model
         'last_login_ip',
         'status'
     ];
+
     protected $hidden = [
         'password'
     ];

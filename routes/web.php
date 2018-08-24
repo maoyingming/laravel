@@ -44,6 +44,7 @@ Route::get('/login', function () {
 });
 
 Route::group(['namespace' => 'admin'], function () {
+    Route::get('/loginSubmit', 'LoginController@loginSubmits'); //登陆提交处理
     Route::post('/loginSubmit', 'LoginController@loginSubmit'); //登陆提交处理
 });
 

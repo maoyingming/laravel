@@ -225,6 +225,6 @@ class makeServiceCommand extends Command
         $service = strtolower($this->getService());
         $repository = str_replace('Service', '', $service);
         $repository .= 'Repository';
-        return ucwords($repository);
+        return ucfirst($repository);
     }
 }
